@@ -39,7 +39,7 @@
         </label>
         Prévia:
         <div class="modelo modelo1 ff-roboto-mono">
-          <img src="../../../../assets/Imagens/modelo1.png" alt="Aspas azuis" />
+          <img src="/assets/Imagens/modelo1.png" alt="Aspas azuis" />
           <p class="conteudo">{{ thoughts.content }}</p>
           <p class="autoria">
             <b>{{ thoughts.authorship }}</b>
@@ -62,10 +62,7 @@
         </label>
         Prévia:
         <div class="modelo modelo2 ff-roboto-mono">
-          <img
-            src="../../../../assets/Imagens/modelo2.png"
-            alt="Aspas azul claro"
-          />
+          <img src="/assets/Imagens/modelo2.png" alt="Aspas azul claro" />
           <p class="conteudo">{{ thoughts.content }}</p>
           <p class="autoria">
             <b>{{ thoughts.authorship }}</b>
@@ -88,10 +85,7 @@
         </label>
         Prévia:
         <div class="modelo modelo3 ff-roboto-mono">
-          <img
-            src="../../../../assets/Imagens/modelo3.png"
-            alt="Aspas verdes"
-          />
+          <img src="/assets/Imagens/modelo3.png" alt="Aspas verdes" />
           <p class="conteudo">{{ thoughts.content }}</p>
           <p class="autoria">
             <b>{{ thoughts.authorship }}</b>
@@ -101,7 +95,9 @@
     </div>
     <div class="acoes">
       <button (click)="createThoughts()" class="botao">Salvar</button>
-      <button (click)="cancel()" class="botao">Cancelar</button>
+      <button (click)="cancel()" routerLink="/listar_pensamento" class="botao">
+        Cancelar
+      </button>
     </div>
   </form>
 </section>
